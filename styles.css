@@ -1,9 +1,101 @@
+/*page styling*/
 body {
-    background-color: powderblue;
+    background-color: white;
 }
-h1 {
-    color: blue;
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding 0;
 }
+
+li {
+	display: inline;
+}
+
+/*style header*/
+.header {
+	overflow: hidden;
+	background-color: powderblue;
+	padding: 10px 15px;
+}
+
+/*style links in header*/
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	font-family: Arial;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 20px;
+	border-radius: 4px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/*styling of header image
+.header img {
+	float: left;
+	width: 100px;
+	height: 70px;
+	background: #555;
+}*/
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ffcc66;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #9ed1d3;
+  op
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/*.header h1 {
+	position: relative; top: 10px; left: 10px; color: #d04764; font-family: Monospace, cursive; font-size: 66px; font-weight: normal; line-height: 48px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff;}*/
+	
+h2 {
+	font-family: Arial; font-size: 20px; font-weight: 300; color: #7c795d; margin: 0 0 24px;  
+}
+
+div.images img{
+	max-width: 50%;
+	height: auto;
+}
+
 p {
-    color: red;
+    color: black;
+}
+
+h2 a:hover { color: #ffcc66 }
+
+h2 a { color: #ff9900; text-decoration: none; }
+
+footer {
+	color: gray;
 }

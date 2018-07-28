@@ -83,10 +83,16 @@ h2 {
 	font-family: Arial; font-size: 20px; font-weight: 300; color: #7c795d; margin: 0 0 24px;  
 }
 
-div.images img{
-	max-width: 50%;
+img{
+	width: 98.5%;
 	height: auto;
+	vertical-align: top;
+	margin-top: 7px;
 }
+
+ table.verticaal tr{
+	padding: 100px;
+} 
 
 p {
     color: black;

@@ -16,7 +16,7 @@ li {
 /*style header*/
 .header {
 	overflow: hidden;
-	background-color: powderblue;
+	background-color: white;
 	padding: 10px 15px;
 }
 
@@ -34,8 +34,9 @@ li {
 }
 
 .header a.logo {
-	font-size: 25px;
-	font-weight: bold;
+	display: inline-block;
+	float: left;
+	padding: 0;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
@@ -59,15 +60,18 @@ li {
 }*/
 
 /* Change the background color on mouse-over */
-.header a:hover {
+.header-right a:hover {
   background-color: #ffcc66;
   color: black;
+}
+
+.header a:hover{
+	opacity: 0.5;
 }
 
 /* Style the active/current link*/
 .header a.active {
   background-color: #9ed1d3;
-  op
   color: white;
 }
 
@@ -75,22 +79,27 @@ li {
 .header-right {
   float: right;
 }
-
-/*.header h1 {
-	position: relative; top: 10px; left: 10px; color: #d04764; font-family: Monospace, cursive; font-size: 66px; font-weight: normal; line-height: 48px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff;}*/
 	
 h2 {
 	font-family: Arial; font-size: 20px; font-weight: 300; color: #7c795d; margin: 0 0 24px;  
 }
 
-img{
+img.gallery{
 	width: 98.5%;
 	height: auto;
 	vertical-align: top;
 	margin-top: 7px;
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
 }
 
- table.verticaal tr{
+img.gallery:hover {
+	opacity: 0.8;
+	outline: 7px solid powderblue;
+	outline-offset: -7px;
+}
+
+table.verticaal tr{
 	padding: 100px;
 } 
 

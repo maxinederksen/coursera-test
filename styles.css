@@ -1,6 +1,8 @@
 /*page styling*/
 body {
-    background-color: white;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
 }
 
 ul {
@@ -51,14 +53,6 @@ li {
   }
 }
 
-/*styling of header image
-.header img {
-	float: left;
-	width: 100px;
-	height: 70px;
-	background: #555;
-}*/
-
 /* Change the background color on mouse-over */
 .header-right a:hover {
   background-color: #ffcc66;
@@ -77,11 +71,32 @@ li {
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+	padding: 10px 15px;
+	float: right;
+}
+
+/* Container holding the image and text */
+.container {
+	position: relative;
+	text-align: center;
+	color: green;
+}
+
+/* Text on image */
+.imgtext{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 1px 1px gray;
+	font-family: "Amatic SC";
+	font-size: 40px;
+	font-weight: 300;	
+	color: black;
 }
 	
 h2 {
-	font-family: Arial; font-size: 20px; font-weight: 300; color: #7c795d; margin: 0 0 24px;  
+
 }
 
 img.gallery{
@@ -89,14 +104,21 @@ img.gallery{
 	height: auto;
 	vertical-align: top;
 	margin-top: 7px;
-	-webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+	/* -webkit-transition: width 2s; /* Safari
+    transition: width 2s; */
 }
 
 img.gallery:hover {
 	opacity: 0.8;
-	outline: 7px solid powderblue;
-	outline-offset: -7px;
+	outline: 10px solid powderblue;
+	outline-offset: -10px;
+}
+
+img.frontimage{
+	width: 100%;
+	height: auto;
+	-webkit-filter: blur(2x); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 table.verticaal tr{
@@ -105,6 +127,12 @@ table.verticaal tr{
 
 p {
     color: black;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+h2{
+	background-color: white;
 }
 
 h2 a:hover { color: #ffcc66 }
@@ -113,4 +141,6 @@ h2 a { color: #ff9900; text-decoration: none; }
 
 footer {
 	color: gray;
+	font-family: "Arial";
+	font-size: 12px;
 }

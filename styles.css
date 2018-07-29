@@ -1,8 +1,6 @@
 /*page styling*/
 body {
-	background-size: 100%;
-	background-repeat: no-repeat;
-	margin: 0;
+	margin: 0;	
 }
 
 ul {
@@ -30,7 +28,7 @@ li {
 	padding: 12px;
 	font-family: Arial;
 	text-decoration: none;
-	font-size: 18px; 
+	font-size: 15px; 
 	line-height: 20px;
 	border-radius: 4px;
 }
@@ -55,8 +53,8 @@ li {
 
 /* Change the background color on mouse-over */
 .header-right a:hover {
-  background-color: #b7e5a5;
-  color: black;
+	background-color: #b7e5a5;
+	color: black;
 }
 
 .header a:hover{
@@ -65,8 +63,8 @@ li {
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: #9fd9ea;
-  color: white;
+	background-color: #9fd9ea;
+	color: white;
 }
 
 /* Float the link section to the right */
@@ -97,9 +95,6 @@ li {
 	padding-right: 16px;
 }
 	
-h2 {
-
-}
 
 img.gallery{
 	width: 98.5%;
@@ -125,22 +120,80 @@ table.verticaal tr{
 	padding: 100px;
 } 
 
-p {
-    color: black;
-	font-size: 16px;
-	font-family: Arial;
+.introcontainer{
+	padding-left: 20px;
+	padding-right: 20 px;
+	padding-top: 20px;
+	float: left;
+	width: 100%;
 }
 
-h2{
-	background-color: white;
+img.introimage{
+	float: left;
+	width: 30%;
+	height: auto;
+	padding: 0px;
+	background-color: #9fd9ea;
+}
+
+.intro1{
+	float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding-left: 20px;
+	padding-right: 60px;
+	background: black;
+	width: 60%;
+	height: auto;
+}
+
+.intro1 p {
+    color: white;
+	font-size: 14px;
+	font-family: Alegreya Sans;
+	padding-left: 20px;
+	padding-top: 0px;
+	float: relative;
+}
+
+.intro1 h2{
+	color: white;
+	font-size: 16.5px;
+	font-family: Alegreya Sans;
+	padding-left: 20px;
+	padding-top: 0px;
+	float: relative;
+}
+
+.intro2{
+	float: left;
+    color: #f2f2f2;
+    text-align: left;
+    padding-left: 20px;
+	padding-right: 60px;
+	background: #9fd9ea;
+	width: 60%;
+	height: auto;
+}
+
+.intro2 p {
+    color: black;
+	font-size: 14px;
+	font-family: Alegreya Sans;
+	padding-left: 20px;
+	padding-right: 0px;
+	float: relative;
+}
+
+.intro2 h2{
+	color: black;
+	font-size: 16.5px;
+	font-family: Alegreya Sans;
+	padding-left: 20px;
+	padding-top: 0px;
+	float: relative;
 }
 
 h2 a:hover { color: #ffcc66 }
 
 h2 a { color: #ff9900; text-decoration: none; }
-
-footer {
-	color: gray;
-	font-family: "Arial";
-	font-size: 10px;
-}

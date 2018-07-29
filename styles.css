@@ -55,7 +55,7 @@ li {
 
 /* Change the background color on mouse-over */
 .header-right a:hover {
-  background-color: #ffcc66;
+  background-color: #b7e5a5;
   color: black;
 }
 
@@ -65,7 +65,7 @@ li {
 
 /* Style the active/current link*/
 .header a.active {
-  background-color: #9ed1d3;
+  background-color: #9fd9ea;
   color: white;
 }
 
@@ -79,7 +79,6 @@ li {
 .container {
 	position: relative;
 	text-align: center;
-	color: green;
 }
 
 /* Text on image */
@@ -89,10 +88,13 @@ li {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-shadow: 1px 1px gray;
+	background: rgba(240, 255, 255, 0.7);
 	font-family: "Amatic SC";
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: 300;	
 	color: black;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 	
 h2 {
@@ -110,15 +112,13 @@ img.gallery{
 
 img.gallery:hover {
 	opacity: 0.8;
-	outline: 10px solid powderblue;
+	outline: 10px solid #9fd9ea;
 	outline-offset: -10px;
 }
 
 img.frontimage{
 	width: 100%;
 	height: auto;
-	-webkit-filter: blur(2x); /* Safari 6.0 - 9.0 */
-    filter: blur(2px);
 }
 
 table.verticaal tr{
@@ -142,5 +142,5 @@ h2 a { color: #ff9900; text-decoration: none; }
 footer {
 	color: gray;
 	font-family: "Arial";
-	font-size: 12px;
+	font-size: 10px;
 }

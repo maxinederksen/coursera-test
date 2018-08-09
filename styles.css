@@ -6,10 +6,11 @@ body {
 ul {
 	list-style-type: none;
 	margin: 0;
-	padding 0;
+	padding: 0;
 }
 
 li {
+	float: left;
 	display: inline;
 }
 
@@ -53,7 +54,7 @@ li {
 
 /* Change the background color on mouse-over */
 .header-right a:hover {
-	background-color: #b7e5a5;
+	background-color: #gray;
 	color: black;
 }
 
@@ -71,6 +72,41 @@ li {
 .header-right {
 	padding: 10px 15px;
 	float: right;
+}
+
+.gallerymenu {
+	margin: auto;
+	float: right;
+	width: 64%;	
+}
+
+.gallerymenu a{
+	background-color: white;
+	color: black;
+	font-family: Alegreya;
+}
+
+.gallerymenu a:hover{
+	background-color:black;
+}
+
+.gallerymenu a.active {
+	text-decoration: underline;
+}
+
+li a {
+	font-family: Alegreya;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color of the gallery menu on hover */
+li a:hover {
+    background-color: white;
+	color: white;
 }
 
 /* Container holding the image and text */
@@ -105,10 +141,38 @@ img.gallery{
     transition: width 2s; */
 }
 
-img.gallery:hover {
-	opacity: 0.8;
-	outline: 10px solid #9fd9ea;
-	outline-offset: -10px;
+.price{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Arial; 
+	font-size: 30px;
+}
+
+.wrapper {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.wrapper .price{
+	visibility: hidden;
+	color: black;
+}
+
+.wrapper:hover .price {
+	visibility: visible;
+}
+
+.wrapper:hover img {
+	opacity: 0.4;
+}
+
+img.gallery:not(.wrapper):hover {
+	opacity: 0.4;
+	/*outline: 10px solid black;
+	outline-offset: -10px;*/
 }
 
 img.frontimage{
@@ -124,7 +188,6 @@ table.verticaal tr{
 	padding-left: 20px;
 	padding-right: 20 px;
 	padding-top: 20px;
-	float: left;
 	width: 100%;
 }
 
@@ -145,6 +208,7 @@ img.introimage{
 	background: black;
 	width: 60%;
 	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .intro1 p {
@@ -153,7 +217,9 @@ img.introimage{
 	font-family: Alegreya Sans;
 	padding-left: 20px;
 	padding-top: 0px;
-	float: relative;
+	width: 100%;
+	height: auto;
+	
 }
 
 .intro1 h2{
@@ -162,7 +228,7 @@ img.introimage{
 	font-family: Alegreya Sans;
 	padding-left: 20px;
 	padding-top: 0px;
-	float: relative;
+	width: 100%;
 }
 
 .intro2{
@@ -174,6 +240,7 @@ img.introimage{
 	background: #9fd9ea;
 	width: 60%;
 	height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .intro2 p {
@@ -183,6 +250,7 @@ img.introimage{
 	padding-left: 20px;
 	padding-right: 0px;
 	float: relative;
+	width: 100%;
 }
 
 .intro2 h2{
@@ -192,8 +260,24 @@ img.introimage{
 	padding-left: 20px;
 	padding-top: 0px;
 	float: relative;
+	width:100%
 }
 
 h2 a:hover { color: #ffcc66 }
 
 h2 a { color: #ff9900; text-decoration: none; }
+
+.contact {
+    margin: auto;
+    width: 30%;
+    padding: 40px;
+	text-align: center;
+	font-family: Arial;
+	color: white;
+	background-color: pink;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact a {
+	color: gray;
+}

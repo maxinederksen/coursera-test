@@ -143,11 +143,20 @@ img.gallery{
 
 .price{
 	position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 	font-family: Arial; 
-	font-size: 30px;
+	font-size: 27px;
+}
+
+.availability{
+	position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-family: Arial; 
+	font-size: 20px;
 }
 
 .wrapper {
@@ -159,6 +168,15 @@ img.gallery{
 .wrapper .price{
 	visibility: hidden;
 	color: black;
+}
+
+.wrapper .availability {
+	visibility: hidden;
+	color: black;
+}
+
+.wrapper:hover .availability{
+	visibility: visible;
 }
 
 .wrapper:hover .price {

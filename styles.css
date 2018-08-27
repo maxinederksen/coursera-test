@@ -1,4 +1,8 @@
 /*page styling*/
+img {
+    image-orientation: from-image;
+}
+
 body {
 	margin: 0;	
 }
